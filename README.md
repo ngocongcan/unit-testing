@@ -10,9 +10,10 @@ Unit testing involves only those characteristics that are vital to the performan
 Unit testing does have steep learning curve. The development team needs to learn what unit testing is, how to unit test, what to unit test and how to use automated software tools to facilitate the process on an on-going basis.  The great benefit to unit testing is that the earlier a problem is identified, the fewer compound errors occur. A compound error is one that doesn't seem to break anything at first, but eventually conflicts with something down the line and results in a problem.
 
 This Google TechTalk provides an overview of unit testing.
+
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=wEhu57pih5w
 " target="_blank"><img src="http://img.youtube.com/vi/wEhu57pih5w/0.jpg"
-alt="wEhu57pih5w" width="240" height="180" border="10" /></a>
+alt="This Google TechTalk provides an overview of unit testing" width="600" height="400" border="1" /></a>
 
 
 Why is Unit testing Important?
