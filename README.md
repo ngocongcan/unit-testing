@@ -1,6 +1,20 @@
 What is Unit testing?
 ====================
 
+Unit testing is a software development process in which the smallest testable parts of an application, called units, are individually and independently scrutinized for proper operation. Unit testing can be done manually but is often automated.
+
+Unit testing is a component of test-driven development (TDD), a pragmatic methodology that takes a meticulous approach to building a product by means of continual testing and revision. Test-driven development requires that developers first write failing unit tests. Then they write code and refactor the application until the test passes. TDD typically results in an explicit and predictable code base.
+
+Unit testing involves only those characteristics that are vital to the performance of the unit under test. This encourages developers to modify the source code without immediate concerns about how such changes might affect the functioning of other units or the program as a whole. Once all of the units in a program have been found to be working in the most efficient and error-free manner possible, larger components of the program can be evaluated by means of integration testing.
+
+Unit testing does have steep learning curve. The development team needs to learn what unit testing is, how to unit test, what to unit test and how to use automated software tools to facilitate the process on an on-going basis.  The great benefit to unit testing is that the earlier a problem is identified, the fewer compound errors occur. A compound error is one that doesn't seem to break anything at first, but eventually conflicts with something down the line and results in a problem.
+
+This Google TechTalk provides an overview of unit testing.
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=wEhu57pih5w
+" target="_blank"><img src="http://img.youtube.com/vi/wEhu57pih5w/0.jpg"
+alt="wEhu57pih5w" width="240" height="180" border="10" /></a>
+
+
 Why is Unit testing Important?
 =============================
 ### 1. Makes the Process Agile
@@ -37,6 +51,31 @@ Since the bugs are found early, unit testing helps reduce the cost of bug fixes.
 
 When should I write unit tests?
 ===============================
+
+![Product Life Cycle](/images/product-life-cycle-chart.jpeg)
+
+*Image by Malakooti, B. (2013). Operations and Production Systems with Multiple Objectives. John Wiley & Sons. CC BY-SA 4.0*
+
+### Stage 1: Introduction
+
+If you’re in start up mode, doing proof of concepts, are writing tests really going to add value? Probably not. You probably haven’t even finalized core functionality at this point. So why test it?
+
+There’s the argument that TDD makes sense and unit tests are good requirements to test against. But even here I’d say your requirements are probably changing too quickly.
+### Stage 2: Growth
+
+Okay. Enter testing. At this point the cost of code failure and potential problems begins to outweigh the cost of testing.
+
+You should be developing a testing strategy at this point that includes other types of tests as well. This is when I think it makes sense to begin unit testing. You know what the core functionality is at this point, from here on out everything else is ramping up and adding features.
+### Stage 3: Maturity
+
+In this stage, the cost of test coverage is clearly less than the potential risk of downtime. Test the sh*t out of your software.
+Stage 4: Decline
+
+Writing new tests at this point is useless. It’s just a matter of time before the project you’re working on gets retired. Even maintaining tests is costly in this phase. You probably have a replacement piece of software in mind and a good chunk of the software has already been battle-hardened by users.
+
+So if you have no major development planned, and a test or two fails as long as users aren’t complaining… who cares?
+
+Ehhh you should. As the person charged with maintaining an old system, you need to care. At this point unit tests can act as kind of a canary in the coal mine. If a unit test is failing. You should at a minimum understand why it is failing. Tests don’t fail in isolation, something has changed to induce a failure. Investigate it.
 
 References
 ==========
